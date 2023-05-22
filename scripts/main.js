@@ -1,5 +1,5 @@
 var siteInfo = {
-    "sitename": "Rauma Badeklubb",
+    "sitename": "NEDA Experience",
     "contact": {
         "name": "Hans Kristian Smedsrød",
         "phone": "+47 928 41 558",
@@ -8,11 +8,6 @@ var siteInfo = {
     }
 }
 
-moment.locale('nb');
-
-const today = new Date(),
-    todaysDate = moment(today).format("YYYY-MM-DD"),
-    tomorrowsDate = moment(today).add(1,'days').format("YYYY-MM-DD");
 
 var isTouchDevice = function () {
     return (
@@ -29,11 +24,10 @@ var isTouchDevice = function () {
 function init() {
     var touchClass = isTouchDevice() ? "touch" : "no-touch";
     document.body.classList.add(touchClass);
+    document.body.classList.remove("preload");
+    document.body.classList.add("loaded");
 }
 
 window.onload = function () {
     init();
-    renderData();
-    document.body.classList.remove("preload");
-    document.body.classList.add("loaded");
 }

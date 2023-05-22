@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./favicon.png">
+
     <link rel="stylesheet" href="./stylesheet.css" type="text/css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,32 +18,109 @@
 <body class="preload">
     <header>
         <div class="header__overlay">
-            <img class="header__logo" src="./assets/img/naerdetalvor_logo.png" width="200px" height="200px" alt="Nå Er Det Alvor Logo">
+            <a class="header__cta" href="">Meld deg på!</a>
+            <img class="header__logo" src="./assets/img/naerdetalvor_logo.png" width="200px" height="200px" alt="Nå Er Det Alvor Logo">            
             <h1>NEDA Experience</h1>
-            <p>En drøy helg i Romsdal | <time datetime="2023-09-07 17:00">7. -10. september 2023</time></p>
+            <p>En drøy helg i Romsdalsfjella <time datetime="2023-09-07 17:00">7. -10. september 2023</time></p>
         </div>
+
         <img class="header__bg" src="./assets/img/header.jpg" alt="To løpere på Romsdalseggen" title="Foto: Pontus Stigberg">
     </header>
-    
+
     <main>
         <nav>
             <ul>
                 <li><a href="#program">Program</a></li>
                 <li><a href="#ruter">Ruter</a></li>
                 <li><a href="#pamelding">Påmelding</a></li>
-                <li><a href="#kontakter">Kontakter</a></li>
             </ul>
         </nav>
+        <section id="program">
+            <h1>Detaljert program</h1>
+            
+            <details class="day">
+                <summary><h2 class="day__title">Torsdag 07.09.2023</h2></summary>
+
+                <div class="event">
+                    <h3><time datetime="2023-09-07 16:15"><time>16:15</time>: Buss Åndalsnes Stasjon - Villa Vengetind, Isfjorden</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est veritatis quaerat molestiae corporis consequuntur dignissimos. Non quisquam sapiente, enim iste assumenda maiores inventore accusamus esse vitae reprehenderit, unde fuga impedit!</p>
+                </div>
+
+                <div class="event">
+                    <h3><time datetime="2023-09-07 18:30"><time>18:30</time>: Kveldstur til Moanebba</h3>
+                    <p>Vi sikter oss inn på en rolig tur opp det lokale fjellet rett bak Villa Vengetind, Moanebba. Ca. 10km, 700m d+. Start/slutt: Villa Vengetind</p>
+                    <p>Obligatorisk utstyr: Hodelykt</p>
+                </div>
+
+                <div class="event">
+                    <h3><time datetime="2023-09-07 21:30"><time>21:30</time>: Kveldsmat</h3>
+                </div>
+
+            </details>
+
+            <details class="day">
+                <summary><h2 class="day__title">Fredag 08.09.2023</h2></summary>
+
+                <div class="event">
+                    <h3><time datetime="2023-09-08 16:15"><time>07:30</time>: Frokost</h3>
+                </div>
+
+                <div class="event">
+                    <h3><time datetime="2023-09-08 08:45"><time>08:45</time>: Buss til Åfarnes</h3>
+                </div>
+
+                <div class="event">
+                    <h3><time datetime="2023-09-08 09:30"><time>09:30</time>: Langtur fra Åfarnes til Isfjorden</h3>
+                    <p>
+                        Vi følger denne GPS-tracken som går fra Åfarnes til Øvre Kavli i Isfjorden via Skorgedalsbu og Måsvassbu. Dette er en lang men snill tur som følger deler av den såkalte Romsdalsstien. 
+                        Turen er ca 35km lang med 1500 høydemeter stigning. Dette er noen av Raumas fineste stier med fantastisk utsikt, og innebærer ingen eksponerte egger eller klyving. Forfriskninger venter på Måsvassbu etter ca 2 mil. 
+                        Turen vil ta ca 4-5 timer i easy tempo om alt går etter planen. Vi blir hentet ved Øvre kavli i minibuss som frakter oss tilbake til Villa Vengetind.
+                    </p>
+                </div>
+
+                <div class="event">
+                    <h3><time datetime="2023-09-08 08:45"><time>15:00</time>: Sein brunsj på <abbr title="Villa Vengetind">VV</abbr></h3>                    
+                </div>
+
+                <div class="event">
+                    <h3><time datetime="2023-09-08 08:45"><time>16:00</time>: Fjell-Yoga med Lise</h3>
+                </div>
+
+                <div class="event">
+                    <h3><time datetime="2023-09-08 08:45"><time>18:00</time>: Foredrag med Blaise Dubois</h3>
+                </div>
+
+                <div class="event">
+                    <h3><time datetime="2023-09-08 20:00"><time>20:00</time>: Middag</h3>
+                </div>
+            </details>
+
+            <details class="day">
+                <summary><h2 class="day__title">Lørdag 09.09.2023</h2></summary>
+
+                <div class="event">
+                    <h3><time datetime="2023-09-09 07:30"><time>07:30</time>: Frokost</h3>
+                </div>
+
+                <div class="event">
+                    <h3><time datetime="2023-09-09 08:45"><time>08:45</time>: Buss til Isterdalen</h3>
+                </div>
+
+
+            </details>
+
+        </section>
 
         <section id="ruter">
-            <iframe width="560" height="400" frameBorder="0" src="https://fatmap.com/routeid/3260932/neda-experience-afarnes-ovre-kavli?fmid=em"></iframe>
-            <iframe src='https://connect.garmin.com/modern/course/embed/162877288' width='465' height='548' frameBorder='0' />
+            <!-- <iframe src='https://connect.garmin.com/modern/course/embed/162877288' width='465' height='548' frameBorder='0' /> -->
         </section>
-        
+
     </main>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-    <script src="./scripts/moment.js" type="text/javascript"></script>
+    <footer>
+        <h2>hallo?</h2>
+    </footer>
+
     <script src="./scripts/main.js" type="text/javascript"></script>
 
 </body>

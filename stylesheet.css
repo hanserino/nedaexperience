@@ -1,0 +1,113 @@
+html, body, div, span,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, img,
+small,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas,
+figure, figcaption, footer, header, 
+nav, output, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 100%;
+}
+
+abbr {
+    font-variant: none;
+    text-decoration: none;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+.visually-hidden { 
+    position: absolute; 
+    overflow: hidden; 
+    clip: rect(0 0 0 0); 
+    height: 1px; width: 1px; 
+    margin: -1px; padding: 0; border: 0; 
+}
+
+body{
+    color: #333;
+    font-size: 100%;
+    line-height: 1.5;
+}
+
+header {
+    text-align: center;
+    height: 80vh;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    font-family: 'Bangers', cursive;
+    color: white;
+    text-shadow: -2px 2px 2px rgba(0,0,0,.3);
+}
+
+.header__bg {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.header__overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    padding: 2rem 0 1rem 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 15vw;
+}
+header p {
+    font-size: 5vw;
+}
+
+.header__logo {
+    width: 10vw;
+    height: auto;
+}
+
+p {
+    
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+main {
+    width: 100%;
+    padding: .25rem;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+@media only screen and (min-width: 600px) {
+    main {
+        
+    }
+}

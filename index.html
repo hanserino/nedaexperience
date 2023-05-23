@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <title>NEDA Experience 2023</title>
 </head>
@@ -27,15 +28,19 @@
         <img class="header__bg" src="./assets/img/header.jpg" alt="To løpere på Romsdalseggen" title="Foto: Pontus Stigberg">
     </header>
 
-    <main>
-        <!--<nav>
-            <ul>
-                <li><a href="#program">Program</a></li>
-                <li><a href="#ruter">Ruter</a></li>
-                <li><a href="#pamelding">Påmelding</a></li>
-            </ul>
-        </nav>-->
+    <nav>
+        <ul>
+            <li><a href="#program">Program</a></li>
+            <li><a href="#pamelding">Påmelding</a></li>
+            <li><a href="#sikkerhet">Sikkerhet</a></li>
+            <li><a href="#overnatting">Overnatting</a></li>
 
+            <!-- <li><a href="#ressurser">Ressurser</a></li> -->
+            <li><a href="#partnere">Partnere</a></li>
+        </ul>
+    </nav>
+
+    <main>
         <section class="program" id="program">
             <header class="program__header">
                 <h2>Detaljert program</h2>
@@ -63,7 +68,6 @@
                 <div class="event">
                     <h4><time datetime="2023-09-07 21:30">21:30</time>: Kveldsmat</h4>
                 </div>
-
             </details>
 
             <details class="day">
@@ -116,9 +120,7 @@
 
                 <div class="event">
                     <h4><time datetime="2023-09-09 09:20">09:20</time>: Tur til Bispen via Kløvstien</h4>
-                    <p>
-                        Vi følger <a href="https://connect.garmin.com/modern/course/163176886">denne GPS-tracken</a> og løper fra bunnen av Trollstigen i Isteralen opp den såkalte Kløvstien opp til Bispevatnet og videre opp til toppen av Bispen. Sjåføren vår venter på oss ved restauranten på toppen av Trollstigen og kjører oss tilbake. Ca 10km og 1000 høydemeter. Til tider ganske bratt. Lett klyving på toppen. 
-                    </p>
+                    <p>Vi følger <a href="https://connect.garmin.com/modern/course/163176886">denne GPS-tracken</a> og løper fra bunnen av Trollstigen i Isteralen opp den såkalte Kløvstien opp til Bispevatnet og videre opp til toppen av Bispen. Sjåføren vår venter på oss ved restauranten på toppen av Trollstigen og kjører oss tilbake. Ca 10km og 1000 høydemeter. Til tider ganske bratt. Lett klyving på toppen. </p>
                 </div>
 
                 <div class="event">
@@ -150,7 +152,6 @@
                 <div class="event">
                     <h4><time datetime="2023-09-09 22:00">22:00</time>: Kveldsmat</h4>
                 </div>
-
             </details>
 
             <details class="day">
@@ -168,7 +169,6 @@
                     <p>Vi avslutter campen med en juvel av en tur. Vi følger <a href="https://connect.garmin.com/modern/course/163187930">denne GPS-ruta</a> og løper en 15km loop opp til Saufonnholet. Dette er en bortgjemt perle med flytsti, kjetting, stiger og fantastisk utsikt. Ca 1000 høydemeter.</p>
                 </div>
 
-
                 <div class="event">
                     <h4><time datetime="2023-09-09 12:30">12:30</time>: Buss tilbake til VV</h4>
                 </div>
@@ -181,7 +181,6 @@
                     <h4><time datetime="2023-09-09 16:30">16:30</time>: Tog mot Dombås / Oslo</h4>
                 </div>
             </details>
-
         </section>
 
         <section class="people" id="mennesker">
@@ -189,58 +188,110 @@
                 <h2>Mennesker</h2>
                 <p>Å arrangere en leirskole for voksne av denne kalliberen er ikke en enmannsjobb. Disse menneskene vil du møte på:</p>
             </header>
+            <div class="figures">
+                <figure>
+                    <img src="./assets/img/hanskristiansmedsrod.jpg" alt="Jon Albon with ropes" />
+                    <figcaption>
+                        <h4 class="f-bangers">Hans Kristian Smedsrød</h4>
+                        <p>Rolle: Arrangementsleder, guide og potet</p>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="./assets/img/lisefredrikkeengdahl.jpg" alt="Jon Albon with ropes" />
+                    <figcaption>
+                        <h4 class="f-bangers">Lise Fredrikke Engdahl</h4>
+                        <p>Rolle: Yogainstruktør og arrangementspotet</p>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="./assets/img/jonalbon.jpg" alt="Jon Albon with ropes" />
+                    <figcaption>
+                        <h4 class="f-bangers">Jon Albon</h4>
+                        <p>Rolle: Foredragsholder</p>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="./assets/img/henriettealbon.jpg" alt="Jon Albon with ropes" />
+                    <figcaption>
+                        <h4 class="f-bangers">Henriette Albon</h4>
+                        <p>Rolle: Foredragsholder</p>
+                    </figcaption>
+                </figure>
 
-            <div class="people-list">
-                <div class="people-list__person">
-                    <img src="./assets/img/hanskristiansmedsrod.jpg" alt="Hans Kristian Smedsrød">
-                    <h4 class="f-bangers">Hans Kristian Smedsrød</h4>
-                    <p>Rolle: Arrangementsleder, guide og potet</p>
-                    <a href="./assets/vcards/hanskristiansmedsrod.vcf" download="download">Last ned kontaktinfo (vCard)</a>
-                </div>
-
-                <div class="people-list__person">
-                    <img src="./assets/img/lisefredrikkeengdahl.jpg" alt="Lise Fredrikke Engdahl">
-                    <h4 class="f-bangers">Lise Fredrikke Engdahl</h4>
-                    <p>Rolle: Yogainstruktør og arrangementspotet</p>
-                    <a href="./assets/vcards/lisefredrikkeengdahl.vcf" download="download">Last ned kontaktinfo (vCard)</a>
-                </div>
-
-                <div class="people-list__person">
-                    <img src="./assets/img/jonalbon.jpg" alt="Jon Albon">
-                    <h4 class="f-bangers">Jon Albon</h4>
-                    <p>Rolle: Foredragsholder</p>
-                </div>
-
-                <div class="people-list__person">
-                    <img src="./assets/img/henriettealbon.jpg" alt="Henriette Albon">
-                    <h4 class="f-bangers">Henriette Albon</h4>
-                    <p>Rolle: Foredragsholder</p>
-                </div>
-
-                <div class="people-list__person">
+                <figure>
                     <img src="./assets/img/blaisedubois.jpg" alt="Blaise Dubois">
-                    <h4 class="f-bangers">Blaise Dubois</h4>
-                    <p>Rolle: Foredragsholder</p>
-                </div>
+                    <figcaption>
+                        <h4 class="f-bangers">Blaise Dubois</h4>
+                        <p>Rolle: Foredragsholder og deltaker</p>
+                    </figcaption>
+                </figure>
 
+                <figure>
+                    <img src="./assets/img/idanilsson.jpg" alt="Jon Albon with ropes" />
+                    <figcaption>
+                        <h4 class="f-bangers">Ida Nilsson</h4>
+                        <p>Rolle: Guide</p>
+                    </figcaption>
+                </figure>
             </div>
-
-        </section>
-
-        <section class="partners" id="partnere">
-            <header class="partners__header">
-                <h2>Samarbeidspartnere</h2>
-            </header>
         </section>
 
         <section class="security" id="sikkerhet">
             <header class="security__header">
                 <h2>Sikkerhet</h2>
-                <p></p>
+                <p>NEDA Experience er et arrangement for viderekomne fjell/sti/ultraløpere. Vi som arrangører gjør vårt beste for å gjøre turene så trygge som mulig, men det er til syvende og sist opp til deg om du føler deg komfortabel med lange turer i alpint terreng, dårlig vær, lett klyving og luftige egger. </p>
+                <div class="figures">
+                    <figure>
+                        <img src="./assets/img/belayjon.jpg" alt="Jon Albon with ropes" />
+                        <figcaption>
+                            <h4>Jon Albon har kontroll</h4>
+                            <p>Her fra en tur på Vengetindtraversen i 2022</p>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="./assets/img/belayjon2.jpg" alt="Jon Albon with ropes" />
+                    </figure>
+                </div>
             </header>
         </section>
 
-        <section class="resources" id="ressurser">
+        <section class="signup" id="pamelding">
+            <h2>Påmelding</h2>
+            <a class="big-signup-btn" target="_blank" href="https://www.naerdetalvor.no/butikk/neda-experience">
+                <span class="big-signup-btn__main-text">Meld deg på her!</span>
+                <span class="big-signup-btn__sub-text">Ekstern side <i style="font-size:12px" class="fa">&#xf08e;</i></span>
+            </a>
+            <p>Etter påmelding blir du invitert inn i en lukket Facebook-gruppe slik at du får tettere oppfølging og informasjon før,- og under campen.</p>
+        </section>
+
+        <section class="partners" id="partnere">
+            <header class="partners__header">
+                <h2>Partnere</h2>
+                <div class="partners-list">
+                    <div class="partners-list__item">
+                        <div class="figures">
+                            <figure>
+                                <img src="./assets/img/piteraqandalsnes.jpg" alt="Piteraq Åndalsnes" />
+                                <figcaption>
+                                    <h4>Piteraq Åndalsnes</h4>
+                                    <p>Piteraq tilbyr deltakerne opp til 40% rabatt på en mengde varer.</p>
+                                </figcaption>
+                            </figure>
+                            <figure>
+                                <img src="./assets/img/urkraft.jpg" alt="Piteraq Åndalsnes" />
+                                <figcaption>
+                                    <h4>Urkraft</h4>
+                                    <p>Urkraft støtter campen med havregryn til frokost og bars til turene.</p>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </header>
+        </section>
+
+
+        <!--<section class="resources" id="ressurser">
             <header class="resources__header">
                 <h2>Ressurser</h2>
                 <p>Her er en liste med diverse ressurser du kan trenge på NEDA Experience</p>
@@ -256,13 +307,16 @@
                 </ul>
             </div>
 
-        </section>
+        </section>-->
 
     </main>
 
-    <!-- <footer>
-        <h2>hallo?</h2>
-    </footer> -->
+    <footer>
+        <h2 class="asfalt f-bangers">
+            <span>F</span><span>Ø</span><span>K</span><span>K </span>
+            <span>A</span><span>S</span><span>F</span><span>A</span><span>L</span><span>T</span>
+        </h2>
+    </footer>
 
     <script src="./scripts/main.js"></script>
 

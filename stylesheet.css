@@ -66,10 +66,45 @@ body {
     text-shadow: -2px 2px 2px rgba(0,0,0,.3);
     background: black !important
 }
+
 @media only screen and (min-width: 800px) {
     .site-header {
         height: 80vh;
     }
+}
+nav {
+   
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+nav li {
+    width: 100%;
+}
+
+nav a {
+    color: black;
+    font-size: 2rem;
+    padding: 1rem 0;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: block;
+}
+
+nav a:hover {
+    text-decoration: line-through;
+    background-color: black;
+    color: white;
 }
 
 .header__bg {
@@ -177,7 +212,7 @@ details[open] summary {
     
 }
 
-.people-list {
+.figures {
     display: flex;
     flex-direction: row;
     align-content: flex-start;
@@ -187,18 +222,19 @@ details[open] summary {
     margin: 1rem 0;
 }
 
-.people-list__person {
+figure {
     width: 50%;
     margin: 0 0 .5rem 0;
     padding: .5rem;
 }
+
 
 @media only screen and (min-width: 500px) {
     
 }
 
 
-.people-list h4 {
+figure h4 {
     background: black;
     color: white;
     padding: .2rem .5rem;
@@ -207,10 +243,41 @@ details[open] summary {
     font-size: 1.15rem
 }
 
-.people-list img {
+figure img {
     display: block;
     margin-bottom: -0.8rem;
 }
+
+.big-signup-btn {
+    background: rgb(77, 172, 77);
+    color: white;
+    padding: .5rem 1rem;
+    display: inline-block;
+    text-decoration: none;
+    margin: 0 0 1rem 0;
+    border: 2px solid transparent;
+}
+.big-signup-btn span {
+    display: block;
+}
+.big-signup-btn__main-text {
+    font-size: 2rem;
+    font-weight: bold;
+}
+.big-signup-btn__sub-text {
+    font-size: .85rem;
+
+}
+
+.no-touch .big-signup-btn:hover {
+    background: white;
+    color: rgb(77, 172, 77);
+    border: 2px solid rgb(77, 172, 77);
+    text-decoration: none;
+}
+
+
+
 
 p {
     
@@ -240,7 +307,8 @@ main {
 }
 
 section {
-    margin: 0 0 2rem 0;
+    margin: 3rem 0
+
 }
 
 @media only screen and (min-width: 600px) {
@@ -254,4 +322,31 @@ footer {
     color: white;
     display: block;
     height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.asfalt {
+    font-size: 12vw;
+    display: block;
+    background-color: black;
+    letter-spacing: 0.5vw;
+}
+.asfalt span {
+    background: transparent;
+    display: inline;
+    transition: all .2s linear 0s;
+    transform: translate(0,0);
+    opacity: 1;
+}
+
+.asfalt:hover span:nth-child(odd) {
+    background-color: white;
+    color: black;
+    transform: translate(-5%,-5%);
+    opacity: .95;
+}
+.asfalt:hover span {
+    transform: translate(5%,5%);
 }

@@ -363,7 +363,9 @@ main {
 
 section {
     margin: 3rem 0
-
+}
+section header {
+    margin: 1rem 0;
 }
 
 @media only screen and (min-width: 600px) {

@@ -55,6 +55,23 @@ body {
     font-family: Helvetica, sans-serif;
 }
 
+a {
+    color: inherit;
+    text-decoration: underline;
+}
+.no-touch a:hover {
+    background: black;
+    color: white;
+    text-decoration: underline;
+}
+em {
+    font-weight: bold;
+}
+
+a:visited {
+
+}
+
 .site-header {
     text-align: center;
     height: 60vh;

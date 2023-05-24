@@ -72,6 +72,16 @@ a:visited {
 
 }
 
+.gear__list {
+    margin: 2rem 0 2rem 1rem;
+}
+
+.sidenote {
+    font-style: italic;
+    margin: .5rem;
+    color: #6c6c6c;
+}
+
 .site-header {
     text-align: center;
     height: 60vh;
@@ -101,21 +111,27 @@ nav ul {
     list-style: none;
     padding: 0;
     text-align: center;
-    margin-top: 2rem;
+    margin-top: 0rem;
+    background: black;
+    min-height: 80vh;
 }
 
 nav li {
     width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column
 }
 
 nav a {
-    color: black;
-    font-size: 2rem;
-    padding: 1rem 0;
+    color: white;
+    font-size: 1.25rem;
+    padding: 0;
+    display: block;
     text-decoration: none;
     text-transform: uppercase;
     font-weight: bold;
-    display: block;
+    width: 100%;
 }
 
 nav a:hover {
@@ -123,6 +139,28 @@ nav a:hover {
     background-color: black;
     color: white;
 }
+
+
+@media only screen and (min-width: 750px) {
+    nav ul {
+        min-height: 1px;
+        justify-content: space-between;
+        background: black;
+        height: auto;
+    }
+
+    nav li {
+        width: auto;
+        margin: auto;
+    }
+
+    nav a {
+        font-size: 1.15rem;
+        padding: 1.15rem 0;
+    }
+}
+
+
 
 .header__bg {
     object-fit: cover;
@@ -149,7 +187,7 @@ nav a:hover {
     flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
-    background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.2) 80%, rgba(0,0,0,0.7) 100%);
+    background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.2) 80%, rgba(0,0,0,1) 100%);
 }
 
 .site-header h1 {

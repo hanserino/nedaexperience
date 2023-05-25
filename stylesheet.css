@@ -390,20 +390,32 @@ footer {
     background-color: black;
     letter-spacing: 0.5vw;
 }
+
 .asfalt span {
     background: transparent;
-    display: inline;
-    transition: all .2s linear 0s;
+    display: inline-block;
     transform: translate(0,0);
     opacity: 1;
+    animation-name: asfaltletters;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+    animation-delay: .7s;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate-reverse;
+    animation-play-state: running;
 }
 
-.asfalt:hover span:nth-child(odd) {
-    background-color: white;
-    color: black;
-    transform: translate(-5%,-5%);
-    opacity: .95;
+.asfalt span:nth-child(odd) {
+    animation-delay: 0s; 
 }
-.asfalt:hover span {
-    transform: translate(5%,5%);
+
+@keyframes asfaltletters {
+    from {
+        transform: translate(-5%, -5%);
+        opacity: .95;
+    }
+    to {
+        transform: translate(5%, 5%);
+        opacity: 1;
+    }
 }

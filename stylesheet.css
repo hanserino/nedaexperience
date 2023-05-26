@@ -320,8 +320,7 @@ figure img {
     font-weight: bold;
 }
 .big-signup-btn__sub-text {
-    font-size: .85rem;
-
+    font-size: 1rem;
 }
 
 .no-touch .big-signup-btn:hover {

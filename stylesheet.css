@@ -418,3 +418,12 @@ footer {
         opacity: 1;
     }
 }
+
+.language_btn {
+    position: absolute;
+    left: 1rem;
+    top: 1rem;
+    background-color: black;
+    padding: .1rem .25rem;
+    text-decoration: none;
+}

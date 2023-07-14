@@ -3,4 +3,6 @@
 .DS_store/*
 assets/other/*
 /assets/other/*
-*.psd 
+*.psd
+/assets/other/poster.psd
+assets/other/poster.psd

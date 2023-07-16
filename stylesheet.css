@@ -267,6 +267,11 @@ details[open] summary {
     
 }
 
+.people__role {
+    font-weight: bold;
+}
+
+
 .figures {
     display: flex;
     flex-direction: row;
@@ -427,3 +432,4 @@ footer {
     padding: .1rem .25rem;
     text-decoration: none;
 } 
+

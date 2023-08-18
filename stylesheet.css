@@ -433,3 +433,22 @@ footer {
     text-decoration: none;
 } 
 
+
+
+
+.routes-page header {
+    text-align: center;
+}
+
+.routes-page header h1 {
+    font-size: 2rem;
+
+}
+
+.routes {
+    display: flex;    
+}
+
+.route {
+    border: 1px solid;
+}

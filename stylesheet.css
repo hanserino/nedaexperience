@@ -503,13 +503,14 @@ footer {
 }
 
 
-.contacts {
-
+.downloads {
+    padding: 1rem;
 }
 
-.contacts p {
+.downloads p {
     font-weight: bold;
 }
-.contacts ul {
+.downloads ul {
     margin: 1rem 0 1rem 2rem;
 }
+

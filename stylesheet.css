@@ -234,10 +234,10 @@ nav a:hover {
     transition: opacity 1.5s ease 1s;
 }
 
-.touch .loaded .site-header h1,
-.touch .loaded .site-header p,
-.touch .loaded .header__cta,
-.touch .loaded .language_btn {
+.touch.loaded .site-header h1,
+.touch.loaded .site-header p,
+.touch.loaded .header__cta,
+.touch.loaded .language_btn {
     opacity: 1;
 }
 

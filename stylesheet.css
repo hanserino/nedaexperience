@@ -226,18 +226,18 @@ nav a:hover {
 }
 
 
-.no-touch .site-header h1, 
-.no-touch .site-header p, 
-.no-touch .header__cta, 
-.no-touch .language_btn {
+.touch .site-header h1, 
+.touch .site-header p, 
+.touch .header__cta, 
+.touch .language_btn {
     opacity: 0;
     transition: opacity 1.5s ease 1s;
 }
 
-.no-touch .loaded .site-header h1,
-.no-touch .loaded .site-header p,
-.no-touch .loaded .header__cta,
-.no-touch .loaded .language_btn {
+.touch .loaded .site-header h1,
+.touch .loaded .site-header p,
+.touch .loaded .header__cta,
+.touch .loaded .language_btn {
     opacity: 1;
 }
 

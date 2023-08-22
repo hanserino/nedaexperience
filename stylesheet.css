@@ -226,18 +226,18 @@ nav a:hover {
 }
 
 
-.site-header h1, 
-.site-header p, 
-.header__cta, 
-.language_btn {
+.no-touch .site-header h1, 
+.no-touch .site-header p, 
+.no-touch .header__cta, 
+.no-touch .language_btn {
     opacity: 0;
     transition: opacity 1.5s ease 1s;
 }
 
-.loaded .site-header h1,
-.loaded .site-header p,
-.loaded .header__cta,
-.loaded .language_btn {
+.no-touch .loaded .site-header h1,
+.no-touch .loaded .site-header p,
+.no-touch .loaded .header__cta,
+.no-touch .loaded .language_btn {
     opacity: 1;
 }
 

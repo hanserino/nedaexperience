@@ -21,12 +21,14 @@ var isTouchDevice = function () {
     );
 };
 
+
+
 function init() {
     var touchClass = isTouchDevice() ? "touch" : "no-touch";
     document.body.classList.add(touchClass);
     document.body.classList.remove("preload");
     document.body.classList.add("loaded");
-}
+};
 
 window.onload = function () {
     init();
